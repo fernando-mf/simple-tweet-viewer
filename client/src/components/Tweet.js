@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tweet = ({tweet}) => {
-    const createdDateString = new Date("Fri Aug 31 18:37:04 +0000 2018").toDateString()
+    const createdDateString = new Date(tweet.created_at).toDateString()
     return (
         <li className="list-group-item">
             <span>{tweet.text}</span><br/>
